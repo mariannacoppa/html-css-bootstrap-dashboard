@@ -1,6 +1,7 @@
 header {
     height: 55px;
 }
+
 /* SIDEBAR */
 main {
     height: calc(100vh - 55px);
@@ -14,7 +15,11 @@ main {
     background-color: blanchedalmond;
 }
 /* MAIN-SECTION */
-.col-12 {
+.main-section {
+    height: calc(100vh - 55px);
+    overflow-y: auto;
+}
+.utility {
     background-color: blue;
 }
 .plus {
@@ -26,4 +31,7 @@ main {
 .utility a {
     text-decoration: none;
     color: white;
+}
+.bluechart img {
+    width: 100%;
 }
