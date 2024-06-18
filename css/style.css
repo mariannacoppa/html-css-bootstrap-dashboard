@@ -1,0 +1,10 @@
+header {
+    height: 55px;
+}
+.sidebar [class*="col-"] {
+    background-color: blue;
+    height: calc(100vh - 55px);
+}
+.content-top, .content-bottom {
+    background-color: brown;
+}
