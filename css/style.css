@@ -17,3 +17,16 @@ main {
     background-color: brown;
 }
 /* MAIN-SECTION */
+.col-12 {
+    background-color: blue;
+}
+.plus {
+    border: 1px solid white;
+}
+.utility .top span {
+    display: inline-block;
+}
+.utility a {
+    text-decoration: none;
+    color: white;
+}
