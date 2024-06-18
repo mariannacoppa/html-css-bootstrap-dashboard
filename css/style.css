@@ -1,10 +1,19 @@
 header {
     height: 55px;
 }
-.sidebar [class*="col-"] {
-    background-color: blue;
+/* SIDEBAR */
+main {
     height: calc(100vh - 55px);
+}
+.sidebar {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: rgba(4, 4, 173, 0.611);
+    height: calc(100vh - 55px);
+}
+.main-section {
+    background-color: blanchedalmond;
 }
 .content-top, .content-bottom {
     background-color: brown;
 }
+/* MAIN-SECTION */
