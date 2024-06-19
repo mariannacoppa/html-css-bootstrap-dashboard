@@ -3,7 +3,11 @@ header {
 }
 .fa-bell {
     color: orange;
- }
+    cursor: pointer;
+}
+header .dropdown {
+    max-height: 80px;
+}
 /* SIDEBAR */
 main {
     height: calc(100vh - 55px);
@@ -44,9 +48,6 @@ main {
 .offcanvas button {
     border-color: transparent;
 }
-/* form .dropdown-toggle {
-    border: 1px solid gray;
-} */
 .bluechart img {
     width: 100%;
 }
@@ -78,4 +79,3 @@ td {
     font-size: 12px;
     padding: 3px;
 }
-
