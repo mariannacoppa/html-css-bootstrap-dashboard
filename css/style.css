@@ -1,13 +1,13 @@
 header {
-    height: 80px;
+    height: 50px;
 }
 .fa-bell {
     color: orange;
     cursor: pointer;
 }
 /* SIDEBAR */
-main, .sidebar {
-    height: calc(100vh - 80px);
+.sidebar {
+    height: calc(100vh - 50px);
 }
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
@@ -18,12 +18,12 @@ main, .sidebar {
     background-color: rgba(255, 255, 255, 0.284);
 }
 #mobile-logo, #desktop-logo {
-    height: 50px;
+    height: 40px;
 }
 /* MAIN-SECTION */
 .main-section {
     background-color: #F8F9FA;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 50px);
     overflow-y: auto;
 }
 .utility {
@@ -54,7 +54,7 @@ main, .sidebar {
 .status, .utility a {
     color: white;
 }
-td {
+td, .accordion-body, .todo span, .bluechart p, .bluechart span, .bluechart a {
     font-size: 11px;
 }
 .blue {
@@ -76,5 +76,5 @@ td {
     padding: 3px;
 }
 .next-classes td:first-of-type {
-    width: 50%;
+    width: 70%;
 }
