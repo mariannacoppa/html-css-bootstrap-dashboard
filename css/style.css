@@ -11,7 +11,7 @@ main {
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
     background-color: rgba(4, 4, 173, 0.611);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
 }
 .home:hover, .stats:hover, .signal:hover, .admin:hover {
     background-color: rgba(255, 255, 255, 0.284);
@@ -43,3 +43,29 @@ main {
 .bluechart img {
     width: 100%;
 }
+.orange-logo {
+    height: 20px;
+    border-radius: 20px;
+}
+.status {
+    color: white;
+}
+td {
+    font-size: 11px;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: orange;
+}
+.red {
+    background-color: red;
+}
+.fa-pen, .fa-trash {
+    border: 1px solid gray;
+    color: gray;
+    font-size: 12px;
+    padding: 3px;
+}
+
