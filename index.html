@@ -12,15 +12,15 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand bg-white" href="#">
                 <img src="./img/mobile-logo.png" alt="logo" id="mobile-logo" class="d-lg-none">
                 <img src="./img/logo.svg" alt="desktop-logo" id="desktop-logo" class="d-none d-lg-block w-75">
               </a>
               <form class="d-flex d-block w-75" role="search">
-                <input class="form-control me-2" type="search" placeholder="&#x1F50D; Prova a cercare: lezioni di Laravel" aria-label="Search">
+                <input class="form-control" type="search" placeholder="&#x1F50D; Prova a cercare: lezioni di Laravel" aria-label="Search">
               </form>
               <!-- dropdown menu inizio -->
-              <div class="btn-group dropstart mx-2 order-lg-1">
+              <div class="btn-group dropstart order-lg-1">
                 <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-bell"></i>
                 </button>
@@ -83,10 +83,10 @@
           <div class="main-section col-10 col-md-11">
             <div class="row">
               <div class="utility col-12 p-3 text-white d-md-flex d-lg-flex justify-content-between">
-                <a class="content-first mx-2 my-3 p-1 order-1 btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <div class="content-first mx-2 my-3 p-1 order-1 btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                   <span>Nuovo studente</span>
-                  <span class="add-plus"><i class="fa-solid fa-plus"></i></span>
-                </a>
+                  <a class="add-plus"><i class="fa-solid fa-plus"></i></a>
+                </div>
                 <!-- offcanvas inizio -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                   <div class="offcanvas-header">
@@ -339,13 +339,13 @@
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                           Come aggiungere un nuovo studente?
                         </button>
                       </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <strong>Clicca sul + in alto, nella sezione blu.</strong>
                         </div>
                       </div>
                     </div>
@@ -357,7 +357,7 @@
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <strong>Clicca sull'icona della campanella.</strong>
                         </div>
                       </div>
                     </div>
@@ -369,7 +369,7 @@
                       </h2>
                       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <strong>Sì, è disponibile anche da tablet.</strong>
                         </div>
                       </div>
                     </div>
