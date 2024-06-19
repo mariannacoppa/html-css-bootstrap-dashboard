@@ -79,3 +79,6 @@ td {
     font-size: 12px;
     padding: 3px;
 }
+.next-classes td:first-of-type {
+    width: 50%;
+}

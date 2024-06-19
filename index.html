@@ -19,16 +19,16 @@
               <form class="d-flex d-block w-75" role="search">
                 <input class="form-control me-2" type="search" placeholder="&#x1F50D; Prova a cercare: lezioni di Laravel" aria-label="Search">
               </form>
-              <!-- <i class="fa-solid fa-bell mx-2 order-lg-1"></i> -->
+              <i class="fa-solid fa-bell mx-2 order-lg-1"></i>
               <!-- dropdown menu inizio -->
-              <div class="dropdown order-lg-1">
-                <i class="fa-solid fa-bell mx-2 dropdown-toggle order-lg-1" type="logo" data-bs-toggle="dropdown" aria-expanded="false"></i>
+              <!-- <div class="dropdown order-lg-1">
+                <i class="fa-solid fa-bell" type="logo" data-bs-toggle="dropdown" aria-expanded="false"></i>
                 <ul class="dropdown-menu dropdown-menu-start">
                   <li><button class="dropdown-item" type="button">Action</button></li>
                   <li><button class="dropdown-item" type="button">Another action</button></li>
                   <li><button class="dropdown-item" type="button">Something else here</button></li>
                 </ul>
-              </div>
+              </div> -->
               <!-- dropdown menu fine -->
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -55,6 +55,7 @@
     <main>
       <div class="container-fluid">
         <div class="row">
+          <!-- sidebar -->
           <div class="sidebar col-2 col-md-1 col-lg-1 d-flex justify-content-between flex-column">
             <div class="content-top text-center">
               <div class="home mt-3 d-flex text-light justify-content-center">
@@ -77,6 +78,7 @@
               </div>
             </div>
           </div>
+<!-- MAIN SECTION -->
           <div class="main-section col-10 col-md-11 col-lg-11">
             <div class="row">
               <div class="utility col-12 p-3 text-white d-md-flex d-lg-flex justify-content-between">
@@ -174,237 +176,342 @@
                   <h5>125</h5>
                 </div>
               </div>
-              <div class="next-classes col-12 col-lg-8 px-1 py-2">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th colspan="5" class="rounded-2"><h2>Prossime classi</h2></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Nome</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">Data inizio</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">ROI</td>
-                      <td>Stato</td>
-                      <td>Azioni</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 75</span>
+              <div class="col-12 col-lg-8">
+                <div class="next-classes px-1 py-2">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th colspan="5" class="rounded-2"><h2>Prossime classi</h2></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Nome</td>
+                        <td class="d-none d-md-table-cell">Data inizio</td>
+                        <td class="d-none d-md-table-cell">ROI</td>
+                        <td>Stato</td>
+                        <td class="text-center">Azioni</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 75</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 76</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 77</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="status yellow rounded-3 px-1">Process</span>
+                        </td>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 78</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 79</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="status red rounded-3 px-1">Failed</span>
+                        </td>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 80</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 81</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="status red rounded-3 px-1">Failed</span>
+                        </td>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
+                        </td>
+                      </tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 76</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td>
+                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
+                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 77</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td>
+                          <span class="status yellow rounded-3 px-1">Process</span>
+                        </td>
+                        <td>
+                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
+                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 78</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td>
+                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
+                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 79</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td>
+                          <span class="status red rounded-3 px-1">Failed</span>
+                        </td>
+                        <td>
+                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
+                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 80</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td>
+                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
+                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 81</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td>
+                          <span class="status red rounded-3 px-1">Failed</span>
+                        </td>
+                        <td>
+                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
+                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex">
+                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
+                            <span class="mx-1">Classe 82</span>
+                          </div>
+                        </td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
+                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td>
+                          <span class="status green rounded-3 px-1">Done</span>
+                        </td>
+                        <td>
+                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
+                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        </td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                </div>
+                <div class="faq px-1 py-2">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header m-2">F.A.Q.</h2>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Come aggiungere un nuovo studente?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status green rounded-3 px-1">Done</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 76</span>
-                        </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status green rounded-3 px-1">Done</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 77</span>
-                        </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status yellow rounded-3 px-1">Process</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 78</span>
-                        </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status green rounded-3 px-1">Done</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 79</span>
-                        </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status red rounded-3 px-1">Failed</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 80</span>
-                        </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status green rounded-3 px-1">Done</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 81</span>
-                        </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status red rounded-3 px-1">Failed</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex">
-                          <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                          <span class="mx-1">Classe 82</span>
-                        </div>
-                      </td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                      <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                      <td>
-                        <span class="status green rounded-3 px-1">Done</span>
-                      </td>
-                      <td>
-                        <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                        <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="faq col-12 col-lg-8 px-1 py-2">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header m-2">F.A.Q.</h2>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Come aggiungere un nuovo studente?
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Come posso accedere alle informazioni del mio account?
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Posso usare questa dashboard da mobile?
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="todo col-12 col-lg-4 px-1 py-2">
-                <ul class="list-group">
-                  <li class="list-group-item"><h2>ToDo</h2></li>
-                  <li class="list-group-item">
-                    <input type="checkbox">
-                    <span>Kick-off nuove classi</span>
-                  </li>
-                  <li class="list-group-item">
-                    <input type="checkbox">
-                    <span>Lezione su Bootstrap 5 in classe #75</span>
-                  </li>
-                  <li class="list-group-item">
-                    <input type="checkbox">
-                    <span>Controllare username Github Studenti</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="bluechart col-12 col-lg-4 px-1 py-2">
-                <img src="./img/stats.jpeg" alt="">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <h5>Utenti attivi</h5>
-                    <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                  </li>
-                  <li class="list-group-item">
-                    <span>Gennaio: 1200</span>
-                  </li>
-                  <li class="list-group-item">
-                    <span>Febbraio: 800</span>
-                  </li>
-                  <li class="list-group-item">
-                    <span>Marzo: 1500</span>
-                  </li>
-                </ul>
+              <div class="col-12 col-lg-4">
+                <div class="todo px-1 py-2">
+                  <ul class="list-group">
+                    <li class="list-group-item"><h2>ToDo</h2></li>
+                    <li class="list-group-item">
+                      <input type="checkbox">
+                      <span>Kick-off nuove classi</span>
+                    </li>
+                    <li class="list-group-item">
+                      <input type="checkbox">
+                      <span>Lezione su Bootstrap 5 in classe #75</span>
+                    </li>
+                    <li class="list-group-item">
+                      <input type="checkbox">
+                      <span>Controllare username Github Studenti</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="bluechart px-1 py-2">
+                  <img src="./img/stats.jpeg" alt="">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <h5>Utenti attivi</h5>
+                      <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                    </li>
+                    <li class="list-group-item">
+                      <span>Gennaio: 1200</span>
+                    </li>
+                    <li class="list-group-item">
+                      <span>Febbraio: 800</span>
+                    </li>
+                    <li class="list-group-item">
+                      <span>Marzo: 1500</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
