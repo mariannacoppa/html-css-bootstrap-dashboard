@@ -70,19 +70,90 @@
           <div class="main-section col-10 col-md-11 col-lg-11">
             <div class="row">
               <div class="utility col-12 p-3 text-white d-md-flex d-lg-flex justify-content-between">
-                <a class="content-first mx-2 my-3 p-1 order-1">
+                <a class="content-first mx-2 my-3 p-1 order-1 btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                   <span>Nuovo studente</span>
                   <span class="add-plus"><i class="fa-solid fa-plus"></i></span>
                 </a>
+                <!-- offcanvas inizio -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un novo studente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form class="container">
+                      <div class="row">
+                        <div class="mb-3 col-6">
+                          <label for="exampleInputFirstname" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="exampleInputFirstname">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="exampleInputLastname" class="form-label">Cognome</label>
+                          <input type="text" class="form-control" id="exampleInputLastname">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputAddress" class="form-label">Indirizzo</label>
+                          <input type="text" class="form-control" id="exampleInputAddress">
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="exampleInputCity" class="form-label">Città</label>
+                          <input type="text" class="form-control" id="exampleInputCity">
+                        </div>
+                        <div class="mb-3 col-4">
+                          <label for="exampleInputPassword1" class="form-label">Stato</label>
+                          <div class="dropdown">
+                            <button class="btn border-light-subtle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Scegli...
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" type="button">Action</button></li>
+                              <li><button class="dropdown-item" type="button">Another action</button></li>
+                              <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mb-3 col-2">
+                          <label for="exampleInputNumber" class="form-label">CAP</label>
+                          <input type="number" class="form-control" id="exampleInputNumber">
+                        </div>
+                        <div class="col-12 btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                          <div class="input-group">
+                            <label for="Input group example" class="form-label col-12">Foto</label>
+                            <div class="input-group-text" id="btnGroupAddon">Scegli file</div>
+                            <input type="text" class="form-control" placeholder="Nessun file selezionato" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                      </div>
+                      <button type="submit" class="rounded-2 p-2 text-white blue">Salva</button>
+                      <button type="submit" class="rounded-2 p-2 text-white yellow">Svuota</button>
+                    </form>
+                  </div>
+                </div>
+                <!-- offcanvas fine -->
                 <div class="content-second m-2 p-1">
                   <div class="top">
                     <span><h5>Boolean</h5></span>
-                    <span>piano blaze</span>
+                    <span class="rounded-3 blue px-2 py-1">piano blaze</span>
                   </div>
                   <div class="bottom">
-                    <span>3 app</span>
+                    <span class="rounded-3 blue px-2 py-1">3 app</span>
                     <span><i class="fa-solid fa-angles-right"></i></span>
-                    <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                    <span class="rounded-3 blue px-2 py-1 plus d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                    <span class="rounded-3 blue px-2 py-1 d-none d-lg-inline-block">Boolean mobile app</span>
+                    <span class="rounded-3 blue px-2 py-1 d-none d-lg-inline-block">Boolean web app</span>
+                    <span class="rounded-3 blue px-2 py-1 d-none d-lg-inline-block">Boolean blog app</span>
                   </div>
                 </div>
                 <div class="content-third m-2 p-1">
