@@ -1,6 +1,6 @@
-/* header {
+header {
     height: 80px;
-} */
+}
 .fa-bell {
     color: orange;
  }
@@ -10,8 +10,8 @@ main {
 }
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
-    background-color: rgba(4, 4, 173, 0.611);
-    height: calc(100vh - 70px);
+    background-color: rgb(5, 30, 52);
+    height: calc(100vh - 80px);
 }
 .home:hover, .stats:hover, .signal:hover, .admin:hover {
     background-color: rgba(255, 255, 255, 0.284);
@@ -26,7 +26,7 @@ main {
     overflow-y: auto;
 }
 .utility {
-    background-color: blue;
+    background-color: #1B72E8;
 }
 .add-plus {
     border: 1px solid white;
