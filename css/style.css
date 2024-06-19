@@ -5,29 +5,25 @@ header {
     color: orange;
     cursor: pointer;
 }
-header .dropdown {
-    max-height: 80px;
-}
 /* SIDEBAR */
-main {
-    height: calc(100vh - 55px);
+main, .sidebar {
+    height: calc(100vh - 80px);
 }
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
     background-color: rgb(5, 30, 52);
-    height: calc(100vh - 80px);
     font-size: 12px;
 }
 .home:hover, .stats:hover, .signal:hover, .admin:hover {
     background-color: rgba(255, 255, 255, 0.284);
 }
 #mobile-logo, #desktop-logo {
-    height: 55px;
+    height: 50px;
 }
 /* MAIN-SECTION */
 .main-section {
-    background-color: lightgray;
-    height: calc(100vh - 55px);
+    background-color: #F8F9FA;
+    height: calc(100vh - 80px);
     overflow-y: auto;
 }
 .utility {
@@ -42,7 +38,7 @@ main {
 .utility .top span {
     display: inline-block;
 }
-.utility a {
+.utility a, .dropdown-menu a {
     text-decoration: none;
 }
 .offcanvas button {

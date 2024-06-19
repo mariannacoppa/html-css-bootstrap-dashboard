@@ -19,16 +19,17 @@
               <form class="d-flex d-block w-75" role="search">
                 <input class="form-control me-2" type="search" placeholder="&#x1F50D; Prova a cercare: lezioni di Laravel" aria-label="Search">
               </form>
-              <i class="fa-solid fa-bell mx-2 order-lg-1"></i>
               <!-- dropdown menu inizio -->
-              <!-- <div class="dropdown order-lg-1">
-                <i class="fa-solid fa-bell" type="logo" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                <ul class="dropdown-menu dropdown-menu-start">
-                  <li><button class="dropdown-item" type="button">Action</button></li>
-                  <li><button class="dropdown-item" type="button">Another action</button></li>
-                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+              <div class="btn-group dropstart mx-2 order-lg-1">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bell"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="ms-1">Fatturazione</a></li>
+                  <li><a href="#" class="ms-1">Profilo</a></li>
+                  <li><a href="#" class="ms-1">Logout</a></li>
                 </ul>
-              </div> -->
+              </div>
               <!-- dropdown menu fine -->
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -56,7 +57,7 @@
       <div class="container-fluid">
         <div class="row">
           <!-- sidebar -->
-          <div class="sidebar col-2 col-md-1 col-lg-1 d-flex justify-content-between flex-column">
+          <div class="sidebar col-2 col-md-1 d-flex justify-content-between flex-column">
             <div class="content-top text-center">
               <div class="home mt-3 d-flex text-light justify-content-center">
                 <span><i class="fa-solid fa-house"></i></span>
@@ -79,7 +80,7 @@
             </div>
           </div>
 <!-- MAIN SECTION -->
-          <div class="main-section col-10 col-md-11 col-lg-11">
+          <div class="main-section col-10 col-md-11">
             <div class="row">
               <div class="utility col-12 p-3 text-white d-md-flex d-lg-flex justify-content-between">
                 <a class="content-first mx-2 my-3 p-1 order-1 btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -311,107 +312,6 @@
                           <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
                         </td>
                       </tr>
-                        <td>
-                          <div class="d-flex">
-                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                            <span class="mx-1">Classe 76</span>
-                          </div>
-                        </td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                        <td>
-                          <span class="status green rounded-3 px-1">Done</span>
-                        </td>
-                        <td>
-                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="d-flex">
-                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                            <span class="mx-1">Classe 77</span>
-                          </div>
-                        </td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                        <td>
-                          <span class="status yellow rounded-3 px-1">Process</span>
-                        </td>
-                        <td>
-                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="d-flex">
-                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                            <span class="mx-1">Classe 78</span>
-                          </div>
-                        </td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                        <td>
-                          <span class="status green rounded-3 px-1">Done</span>
-                        </td>
-                        <td>
-                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="d-flex">
-                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                            <span class="mx-1">Classe 79</span>
-                          </div>
-                        </td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                        <td>
-                          <span class="status red rounded-3 px-1">Failed</span>
-                        </td>
-                        <td>
-                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="d-flex">
-                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                            <span class="mx-1">Classe 80</span>
-                          </div>
-                        </td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                        <td>
-                          <span class="status green rounded-3 px-1">Done</span>
-                        </td>
-                        <td>
-                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="d-flex">
-                            <img src="./img/class-avatar.jpg" class="orange-logo" alt="">
-                            <span class="mx-1">Classe 81</span>
-                          </div>
-                        </td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
-                        <td>
-                          <span class="status red rounded-3 px-1">Failed</span>
-                        </td>
-                        <td>
-                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
                       <tr>
                         <td>
                           <div class="d-flex">
@@ -419,16 +319,16 @@
                             <span class="mx-1">Classe 82</span>
                           </div>
                         </td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">17 Feb 2021</td>
-                        <td class="d-none d-md-inline-block d-lg-inline-block w-50">20%</td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <span class="status green rounded-3 px-1">Done</span>
                         </td>
-                        <td>
-                          <i class="rounded-2 mx-1 fa-solid fa-pen"></i>
-                          <i class="rounded-2 mx-1 fa-solid fa-trash"></i>
+                        <td class="d-flex justify-content-center">
+                          <span><i class="rounded-2 mx-1 fa-solid fa-pen"></i></span>
+                          <span><i class="rounded-2 mx-1 fa-solid fa-trash"></i></span>
                         </td>
-                      </tr> -->
+                      </tr>
                     </tbody>
                   </table>
                 </div>
