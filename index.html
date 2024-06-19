@@ -12,37 +12,32 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <a class="navbar-brand" href="#">
+                <img src="./img/mobile-logo.png" alt="logo" id="mobile-logo" class="d-lg-none">
+                <img src="./img/logo.svg" alt="desktop-logo" id="desktop-logo" class="d-none d-lg-block w-75">
+              </a>
+              <form class="d-flex d-block w-75" role="search">
+                <input class="form-control me-2" type="search" placeholder="&#x1F50D; Prova a cercare: lezioni di Laravel" aria-label="Search">
+              </form>
+              <i class="fa-solid fa-bell mx-2 order-lg-1"></i>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                    <a class="nav-link active" aria-current="page" href="#">
+                      <i class="fa-solid fa-list"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">
+                      <i class="fa-solid fa-circle-question"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
@@ -56,17 +51,17 @@
                 <span><i class="fa-solid fa-house"></i></span>
                 <span class="d-none d-md-none d-lg-block mx-1">Home</span>
               </div>
-              <div class="home mt-3 d-flex text-light justify-content-center">
+              <div class="stats mt-3 d-flex text-light justify-content-center">
                 <span><i class="fa-solid fa-chart-simple"></i></span>
                 <span class="d-none d-md-none d-lg-block mx-1">Stats</span>
               </div>
-              <div class="home mt-3 d-flex text-light justify-content-center">
+              <div class="signal mt-3 d-flex text-light justify-content-center">
                 <span><i class="fa-solid fa-signal"></i></span>
                 <span class="d-none d-md-none d-lg-block mx-1">Signal</span>
               </div>
             </div>
             <div class="content-bottom text-center">
-              <div class="home m-3 d-flex text-light justify-content-center">
+              <div class="admin m-3 d-flex text-light justify-content-center">
                 <span><i class="fa-solid fa-gear"></i></span>
                 <span class="d-none d-md-none d-lg-block mx-1">Admin</span>
               </div>
@@ -75,9 +70,9 @@
           <div class="main-section col-10 col-md-11 col-lg-11">
             <div class="row">
               <div class="utility col-12 p-3 text-white d-md-flex d-lg-flex justify-content-between">
-                <a class="content-first m-2 p-1 order-1">
+                <a class="content-first mx-2 my-3 p-1 order-1">
                   <span>Nuovo studente</span>
-                  <span class="plus">&plus;</span>
+                  <span class="add-plus"><i class="fa-solid fa-plus"></i></span>
                 </a>
                 <div class="content-second m-2 p-1">
                   <div class="top">
@@ -87,7 +82,7 @@
                   <div class="bottom">
                     <span>3 app</span>
                     <span><i class="fa-solid fa-angles-right"></i></span>
-                    <span class="plus">&plus;</span>
+                    <span class="plus"><i class="fa-solid fa-plus"></i></span>
                   </div>
                 </div>
                 <div class="content-third m-2 p-1">

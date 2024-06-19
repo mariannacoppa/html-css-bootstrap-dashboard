@@ -1,7 +1,9 @@
-header {
-    height: 55px;
-}
-
+/* header {
+    height: 80px;
+} */
+.fa-bell {
+    color: orange;
+ }
 /* SIDEBAR */
 main {
     height: calc(100vh - 55px);
@@ -9,21 +11,27 @@ main {
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
     background-color: rgba(4, 4, 173, 0.611);
-    height: calc(100vh - 55px);
+    height: calc(100vh - 80px);
 }
-.main-section {
-    background-color: blanchedalmond;
+.home:hover, .stats:hover, .signal:hover, .admin:hover {
+    background-color: rgba(255, 255, 255, 0.284);
+}
+#mobile-logo, #desktop-logo {
+    height: 55px;
 }
 /* MAIN-SECTION */
 .main-section {
+    background-color: lightgray;
     height: calc(100vh - 55px);
     overflow-y: auto;
 }
 .utility {
     background-color: blue;
 }
-.plus {
+.add-plus {
     border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 10px;
 }
 .utility .top span {
     display: inline-block;
