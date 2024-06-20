@@ -76,5 +76,9 @@ td, .accordion-body, .todo span, .bluechart p, .bluechart span, .bluechart a {
     padding: 3px;
 }
 .next-classes td:first-of-type {
-    width: 70%;
+    width: 50%;
+}
+table span.mx-1 {
+    margin-top: auto;
+    margin-bottom: auto;
 }
